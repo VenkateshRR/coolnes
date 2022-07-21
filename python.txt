@@ -1,0 +1,90 @@
+Top Python Tips and Tricks For Programmers
+1. In-place swapping of two numbers
+
+p, q = 20, 40
+print(p, q)
+p, q = q, p
+print(p, q)
+Output:
+
+20 40
+40 20
+2. Reversing a String in Python
+
+x = "MindmajixTraining"
+print( "Reverse is" , x[: : -1] 
+Output:
+
+Reverse is gniniarTxijamdniM
+3. Create a single string from all the elements in the list
+
+x = ["Mindmajix", "Online", "Training"]
+print(" ".join(x))
+Output:
+
+Mindmajix Online Training
+4. Use of Enums in Python
+
+class Training:
+Mindmajix, Online, Mindmajix = range(3)
+print(MyName.Mindmajix)
+print(MyName.Online)
+print(MyName.Mindmajix)
+Output:
+
+2
+1
+2
+5. Return multiple values from functions
+
+def a():
+return 4, 5, 6, 7
+p, q, r, s = a()  
+print(p, q, r, s)
+Output:
+
+4, 5, 6, 7
+6. Print String N times
+
+n = 3
+x = "Mindmajix";
+print(a * n)
+Output:
+
+MindmajixMindmajixMindmajix
+7. Check the memory usage of  an object
+
+import sys
+x = 10
+print(sys.getsizeof(x))
+Output:
+
+28
+8. Find the most frequent value in a list
+
+test = [1, 2, 3, 9, 2, 7, 3, 5, 9, 9, 9]
+print(max(set(test), key = test.count))
+Output:
+
+9
+9. Checking whether the two words are anagrams or not
+
+from collections import Counter
+def is_anagram(str1, str2):
+return Counter(str1) == Counter(str2)
+print(is_anagram('majix', 'magic'))  
+print(is_anagram('majix', 'xijam'))
+Output:
+
+False
+True
+10. Print the file path of imported modules
+
+import os;
+import socket; 
+print(os)
+print(socket)
+Output:
+
+<module 'os' from '/usr/lib/python3.5/os.py'>
+<module 'socket' from '/usr/lib/python3.5/socket.py'>
